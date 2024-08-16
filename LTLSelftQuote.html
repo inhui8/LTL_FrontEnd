@@ -242,11 +242,11 @@
                 console.error(`Row with SO ${so} does not exist.`);
                 return;
             }
-            row.cells[9].textContent = (data.Daylight*1.15).toFixed(2) || 'N/A'; // Update Daylight price
+            row.cells[9].textContent = (data.Daylight*1.2).toFixed(2) || 'N/A'; // Update Daylight price
             row.cells[10].textContent = data['Daylight Class'] || 'N/A'; // Update Daylight Class
             row.cells[11].textContent = data['Auptix Class'] || 'N/A'; // Update Auptix Class
-            row.cells[12].textContent = (data['Auptix Standard Inflexible']*1.15).toFixed(2)  || 'N/A'; // Update Auptix Standard Inflexible
-            row.cells[13].textContent = (data['Auptix Flock Direct Inflexible']*1.15).toFixed(2)  || 'N/A';// Update Auptix Flock Direct Inflexible price
+            row.cells[12].textContent = (data['Auptix Standard Inflexible']*1.2).toFixed(2)  || 'N/A'; // Update Auptix Standard Inflexible
+            row.cells[13].textContent = (data['Auptix Flock Direct Inflexible']*1.2).toFixed(2)  || 'N/A';// Update Auptix Flock Direct Inflexible price
         }
         document.getElementById('download-btn').addEventListener('click', () => {
             const table = document.getElementById('results-table');
